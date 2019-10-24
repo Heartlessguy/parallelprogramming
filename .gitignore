@@ -1,0 +1,2 @@
+# Exclude all bin folders
+**/bin/**
