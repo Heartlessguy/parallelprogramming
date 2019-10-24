@@ -13,8 +13,14 @@
 #define m 10 // array length
 #define dp 100.0f // arr elements rand range
 
-
-// Function for init input vector in #dp range
+/**
+ * ? Fills arr1 with random floats in #dp range
+ * (stolen from extvec.c - see ext/extvec.c)
+ * 
+ * @param[in] m1 - array size
+ * @param[in, out] arr1 - pointer to array
+ * @return void
+ */
 void initvec(int m1, float *arr1)
 {
     int i, j;
@@ -25,7 +31,14 @@ void initvec(int m1, float *arr1)
     }
 }
 
-// Function to print out vector
+/**
+ * ? Prints vector in stdout
+ * 
+ * @param[in] m1 Array size
+ * @param[in, out] arr Pointer to array
+ * @param[out] zag Message
+ * @return void
+ */
 void prnvec(int m1, float *arr, char *zag)
 {
     int i;
@@ -34,8 +47,13 @@ void prnvec(int m1, float *arr, char *zag)
         printf("%10.1f", arr[i]);
     printf("\n");
 }
-
-// Function to calculate math expectation
+/** 
+ * ? Funcion calculates Mathematical expectation value of array
+ * 
+ * @param[in] count Array size
+ * @param[in] arr Pointer to array
+ * @return Mathematical expectation value of arr
+ */
 float Calc_MO(int count, float *arr)
 {
     int i;
@@ -47,7 +65,14 @@ float Calc_MO(int count, float *arr)
     return sum / count;
 }
 
-// Function to calculate mean-sq(standard) deviation
+/** 
+ * ? Function calculates standard deviation of array
+ * 
+ * @param[in] count Array Size
+ * @param[in] arr Pointer to array
+ * @param[in] mo Mathematical expectation value
+ * @return Calculated mean-sq(standard) deviation 
+ */
 float Calc_SO(int count, float *arr, float mo)
 {
     int i;
