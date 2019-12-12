@@ -11,7 +11,7 @@ static double f(double, double);
 static double fi(double, double);
 int main(int argc, char *argv[])
 {
-    double a = -0.5, b = 1.0, c = 0.8, Eps;
+    double a = -1.0, b = 0.8, c = 1.2, Eps;
     int done = 0;
     int i, n, rank, size, Ierr, namelen;
     double Sum, Gsum, Isum, time1, time2, a1, b1, x, F;
