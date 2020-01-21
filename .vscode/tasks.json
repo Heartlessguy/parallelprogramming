@@ -17,7 +17,18 @@
             "problemMatcher": [
                 "$gcc"
             ],
-            "group": "build"
+            "group": "build",
+            "dependsOrder": "sequence",
+            "dependsOn": ["Check bin dir"]
+        },
+        {
+            "type": "shell",
+            "label": "Check bin dir",
+            "command": "mkdir",
+            "args": [
+                "-p",
+                "${fileDirname}/../bin"
+            ]
         }
     ],
     "version": "2.0.0"
