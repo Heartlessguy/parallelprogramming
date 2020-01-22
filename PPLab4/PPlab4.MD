@@ -84,3 +84,12 @@ a = -1.0, b = 0.8, c = 1.2
 * ```c
     omp_set_num_threads(nt) 
     // использовать nt потоков в параллельной области.
+
+## Сборка и запуск
+* ```shell
+    gcc <srcname> -lm -fopenmp -o <outname>
+* ```shell
+    ./outname <threads>
+* ~~Хлопай ресницами и взлетай~~
+
+

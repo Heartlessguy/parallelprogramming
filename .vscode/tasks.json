@@ -23,6 +23,24 @@
         },
         {
             "type": "shell",
+            "label": "gcc omp build active file",
+            "command": "/usr/bin/gcc",
+            "args": [
+                "${file}",
+                "-fopenmp",
+                "-lm",
+                "-o",
+                "${fileDirname}/../bin/${fileBasenameNoExtension}.omp.bin"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "dependsOrder": "sequence",
+            "dependsOn": ["Check bin dir"]
+        },
+        {
+            "type": "shell",
             "label": "Check bin dir",
             "command": "mkdir",
             "args": [

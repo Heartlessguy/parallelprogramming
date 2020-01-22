@@ -1,7 +1,7 @@
 //? LAB1-20i pt.1
 //? Alexandr Komnantyy
 //! Using SEND/RECV
-//? for more info see ../PPlab2.MD
+//? for more info see ../PPlab1.MD
 
 #include <stdio.h>
 #include <math.h>

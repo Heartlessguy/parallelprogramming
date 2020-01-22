@@ -119,6 +119,7 @@ int main(int argc, char **argv)
             nach = i * scol + (i >= ost ? ost : 0);
             displs[i] = nach;
         }
+        printf("\n");
         for (i = 0; i < size; i++)
             printf("%8d", rcount[i]);
         printf(" rcounts \n");
